@@ -2,7 +2,7 @@
 :root {
     --cor-padrao: #5f0085;
     --cor-barra: #9c0ed4;
-    --fundo-secao: rgb(222, 223, 212);
+    --fundo-secao: rgb(255, 255, 255);
 }
 
 *{
@@ -14,7 +14,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: var(--fundo-secao);
+    background-color: var(--cor-padrao);
 }
 
 main {
@@ -23,6 +23,12 @@ main {
     grid-gap: 16px;
     margin: 35px;
     font-family: "Roboto", sans-serif;
+}
+
+@media(max-width: 880px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }
 
 .esquerda, .experiencias, .educacao, .item{
